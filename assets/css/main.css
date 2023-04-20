@@ -689,7 +689,7 @@ body .btn.btn_small span {
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .short_intro {
-    padding: 30px 0 210px 0;
+    padding: 10px 0;
   }
 }
 
@@ -820,13 +820,38 @@ body .btn.btn_small span {
 .our_process .item_process.stage_5 .step {
   color: #131417;
 }
+.our_process .our_process_mobile {
+  display: none;
+}
 @media (min-width: 320px) and (max-width: 768px) {
-  .our_process img {
+  .our_process .process_info {
+    z-index: 1;
+    top: 15%;
+  }
+  .our_process .process_info h3 {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .our_process .process_info a {
     display: none;
   }
-  .our_process .process_info .item_process {
+  .our_process .item_process {
+    display: none;
+  }
+  .our_process .our_process_mobile {
+    z-index: 2;
+    display: block;
+  }
+  .our_process .our_process_mobile .item_process_mobi {
     display: flex;
-    flex-direction: column;
+    padding: 30px 0;
+  }
+  .our_process .our_process_mobile .item_process_mobi .process_inner {
+    padding: 0 20px;
+    display: flex;
+    align-content: space-evenly;
+    gap: 5%;
   }
 }
 
@@ -852,6 +877,9 @@ body .btn.btn_small span {
      object-fit: cover;
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  .our_lab {
+    padding: 50px 0 10px;
+  }
   .our_lab .bg_img {
     display: none;
   }
@@ -1078,17 +1106,21 @@ body .btn.btn_small span {
   overflow: hidden;
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  #footer_site {
+    text-align: center;
+  }
   #footer_site .desktop {
     display: none;
   }
   #footer_site .for_mobile {
     display: block;
     list-style: none;
-    display: flex;
-    align-content: space-evenly;
   }
   #footer_site .for_mobile.menu_ft_mobi {
     padding: 0 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
   }
 }/*# sourceMappingURL=main.css.map */
