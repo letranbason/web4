@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Chakra Petch';
+  src: url('../fonts/fonts-web/ChakraPetch-Bold.woff2') format('woff2'),
+      url('../fonts/fonts-web/ChakraPetch-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  src: url('../fonts/fonts-web/ChakraPetch-Regular.woff2') format('woff2'),
+      url('../fonts/fonts-web/ChakraPetch-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/fonts-web/Exo-Light.woff2') format('woff2'),
+      url('../fonts/fonts-web/Exo-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/fonts-web/Exo-Regular.woff2') format('woff2'),
+      url('../fonts/fonts-web/Exo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/fonts-web/Exo-Bold.woff2') format('woff2'),
+      url('../fonts/fonts-web/Exo-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+$fontFamily: 'Exo', sans-serif;
+$fontTitle: 'Chakra Petch', sans-serif;
+$colorBlack: #131417;
+$colorRed: #EB2227  ;
+$colorYellow: #FCB715;
+$colorWhite: #FFFFFF;
+
+.ff-heading{
+  font-family: $fontTitle;
+  font-weight: bold;
+}
+.fs-128{
+  font-size: 128px;
+  line-height: 112px;
+}
+.fs-96{
+  font-size: 96px;
+  line-height: 84px;
+}
+.fs-64{
+  font-size: 64px;
+  line-height: 63px;
+}
+.fs-40{
+  font-size: 40px;
+  line-height: 46px;
+}
+.fs-32{
+  font-size: 32px;
+  line-height: 38px;
+}
+.fs-24{
+  font-size: 24px;
+  line-height: 32px;
+}
+.fs-20{
+  font-size: 20px;
+  line-height: 26px;
+}
+.fs-16{
+  font-size: 16px;
+  line-height: 21px;
+}
+.fs-14{
+  font-size: 14px;
+  line-height: 17px;
+}
+.fs-12{
+  font-size: 12px;
+  line-height: 14px;
+}
+@media (max-width: 767px) {
+  
+}
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+@mixin transition($property){
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+@mixin borderRadius($property){
+  border-radius: $property;
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  -ms-border-radius: $property;
+  -o-border-radius: $property;
+}
+
+@keyframes pop-char-out {
+  0%,
+  70%,
+  100% {
+      transform: translate(0em, 0em);
+  }
+  35% {
+      transform: translate(0.05em, -0.1em);
+  }
+}
+@keyframes pop-char-out2 {
+  0%,
+  70%,
+  100% {
+      transform: translate(0em, 0em);
+  }
+  35% {
+      transform: translate(0.025em, -0.05em);
+  }
+}
+@keyframes color-cycle {
+  0% {
+      color: rgba(255, 255, 255, 0);
+  }
+  15% {
+      color: var(--color-bg-text);
+  }
+  50% {
+      color: var(--color-text);
+  }
+  80% {
+      color: var(--color-text);
+  }
+  95% {
+      color: var(--color-bg-text);
+  }
+  100% {
+      color: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+.cursor--small {
+  width: 10px;
+  height: 10px;
+  left: -5px;
+  top: -5px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: rgb(24, 173, 214);
+  mix-blend-mode: difference;
+}
+.cursor--canvas {
+  width: 100vw;
+  height: 100vh;
+  z-index: 12000;
+  mix-blend-mode: difference;
+}
