@@ -683,6 +683,11 @@ body .btn.btn_small span {
     display: none;
   }
 }
+@media (min-width: 770px) and (max-width: 1200px) {
+  .our_work .circle_box {
+    display: none;
+  }
+}
 
 .short_intro {
   padding: 106px 0;
@@ -1047,6 +1052,12 @@ body .btn.btn_small span {
     background: url(../images/contact_bg.svg) no-repeat top center/auto 12%;
   }
 }
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contact_form .form_content {
+    width: 100%;
+    background: url(../images/contact_bg.svg) no-repeat center center/auto 30%;
+  }
+}
 
 #footer_site {
   background: #131417;
@@ -1105,7 +1116,7 @@ body .btn.btn_small span {
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   #footer_site {
     text-align: center;
   }
