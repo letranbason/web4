@@ -859,6 +859,115 @@ body .btn.btn_small span {
     gap: 5%;
   }
 }
+@media (min-width: 770px) and (max-width: 1200px) {
+  .our_process h3 {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .our_process .fs-14 {
+    text-align: center;
+  }
+  .our_process a {
+    display: none;
+  }
+  .our_process .item_process {
+    position: absolute;
+  }
+  .our_process .item_process .process_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+  }
+  .our_process .item_process .process_inner .fs-14 {
+    display: none;
+  }
+  .our_process .item_process .step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    transform: translateX(100%);
+  }
+  .our_process .item_process.stage_1 {
+    top: 10%;
+    left: 60%;
+  }
+  .our_process .item_process.stage_1 .process_inner {
+    color: #FFFFFF;
+    background: #131417;
+    width: 97px;
+    height: 97px;
+    padding: 24px;
+  }
+  .our_process .item_process.stage_1 .step {
+    background: #EB2227;
+  }
+  .our_process .item_process.stage_2 {
+    top: 40%;
+    left: 75%;
+  }
+  .our_process .item_process.stage_2 .process_inner {
+    color: #131417;
+    background: #FFFFFF;
+    width: 101px;
+    height: 101px;
+    padding: 24px;
+  }
+  .our_process .item_process.stage_3 {
+    bottom: 2%;
+    left: 50%;
+  }
+  .our_process .item_process.stage_3 .process_inner {
+    color: #FFFFFF;
+    background: #131417;
+    width: 97px;
+    height: 97px;
+    padding: 15px;
+    z-index: 1;
+  }
+  .our_process .item_process.stage_3 .step {
+    background: #EB2227;
+  }
+  .our_process .item_process.stage_4 {
+    bottom: 20%;
+    left: 20%;
+  }
+  .our_process .item_process.stage_4 .process_inner {
+    color: #131417;
+    background: #FFFFFF;
+    width: 69px;
+    height: 69px;
+    padding: 12px;
+    z-index: 1;
+  }
+  .our_process .item_process.stage_4 .step {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  .our_process .item_process.stage_5 {
+    top: 10%;
+    left: 5%;
+  }
+  .our_process .item_process.stage_5 .process_inner {
+    color: #FFFFFF;
+    background: #EB2227;
+    width: 175px;
+    height: 175px;
+    padding: 24px;
+    z-index: 1;
+  }
+  .our_process .item_process.stage_5 .step {
+    color: #131417;
+  }
+}
 
 .our_lab {
   margin: 91px 0;
